@@ -1,0 +1,7 @@
+<launch>
+    <arg name="car" />
+    <machine name="$(arg car)" address="$(arg car)" env-loader="/home/sats/catkin_ws/devel/env.sh" user="sats"/>
+
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="compile" type="compile.py" required="true"/> 
+ 
+</launch>

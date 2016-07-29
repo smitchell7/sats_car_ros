@@ -1,0 +1,225 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{url}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+
+\definecolor{gray}{rgb}{0.9,0.9,0.9}
+
+\lstset{basicstyle=\ttfamily,
+  language=bash,
+  showstringspaces=false,
+  backgroundcolor=\color{gray},
+  breaklines=true,
+  commentstyle=\color{blue},
+  keywordstyle=\bf
+}
+
+\title{SATS Beaglebone Black ROS}
+\author{}
+\begin{document}
+\maketitle
+\section{sats\_car\_ros operation}
+Operation of the ros interface for the sats cars is simple. The following commands are all that are needed to run the cars: 
+\begin{lstlisting}
+roslaunch sats_car_ros run_cars.launch
+\end{lstlisting}
+A gui is available by opening rqt from another window. 
+
+\subsection{Parameters}
+The run\_cars.launch file references two parameter files: sats\_car\_ros/yaml/params.yaml Listing~\ref{param}, sats\_car\_ros/yaml/bbx\_motor.yaml Listing~\ref{motor}, where bbx represents the number of the car being used. These parameters are automatically loaded, but they can be re-broadcast using the following command:
+\begin{lstlisting}
+rosparam load ~/path/to/yaml/params.yaml /params
+rosparam load ~/path/to/yaml/bbx_motors.yaml /bbx/motor_gains
+\end{lstlisting}
+\lstinputlisting[label={param},caption='parameters set in params.yaml']{../yaml/params.yaml}
+\lstinputlisting[label={motor},caption='parameters set in bbx\_motor.yaml']{../yaml/bb2_motor.yaml}
+
+\subsection{Message to operate cars}
+In rqt, there is a message publisher. This is what we will use to operate the robots. The two messages are master Listing~\ref{master} and car\_command Listing~\ref{car}. 
+
+\lstinputlisting[label={master},caption='MasterCommand message definition']{../msg/MasterCommand.msg}
+\lstinputlisting[label={car},caption='CarCommand message definition']{../msg/CarCommand.msg}
+
+\section{Matlab message extraction}
+If you are using MATLAB 2015a or later, support for ROS is built in, but we use custom message types. To load the message types into your path, use the instructions from MATLAB. 
+
+\begin{lstlisting}[label={matlab},caption={method for using custom messages in matlab}]
+To use the custom messages, follow these steps:
+ 
+1. Edit javaclasspath.txt, add the following file locations as new lines, and save the file:
+ 
+/path/to/svn/code/ros/matlab_gen/jar/sats_car_ros-1.0.1.jar
+/path/to/svn/code/ros/matlab_gen/jar/pixy_msgs-1.0.0.jar
+/path/to/svn/code/ros/matlab_gen/jar/pixy_node-1.0.0.jar
+/path/to/svn/code/ros/matlab_gen/jar/pixy_ros-1.0.0.jar
+ 
+2. Add the custom message folder to the MATLAB path by executing:
+ 
+addpath('/path/to/svn/code/ros/matlab_gen/msggen')
+savepath
+ 
+3. Restart MATLAB and verify that you can use the custom messages. 
+   Type "rosmsg list" and ensure that the output contains the generated
+   custom message types.
+\end{lstlisting}
+
+\section{Appendix}
+\subsection{Copy EEMC to SD}
+\begin{itemize}
+    \item Boot from EEMC by powering the device on.
+    \item Copy image from EEMC to SD.
+    \begin{lstlisting}
+    dd if=/dev/mmcblk0 of=/dev/mmcblk1 bs=1M
+    \end{lstlisting}
+    \item Boot from SD. Press S2 (near SD card) while booting. 
+    \item Copy image from SD to EEMC. Note that when booted from the SD card, the address of the EEMC is now mmcblk1. 
+    \begin{lstlisting}
+    dd if=/dev/mmcblk0 of=/dev/mmcblk1 bs=1M
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Programs to install on clean image}
+\begin{enumerate}
+    \item Obtain a clean ubuntu image for BBB
+    \item Install the following: 
+        \begin{itemize}
+            \item openssh-server
+            \item subversion
+            \item python2.7
+            \item python-numpy
+            \item ros-*version*-base
+            \item ros-*version*-tf
+            \item ros-*version*-angles
+            \item libusb-1.0.0-dev
+            \item python-serial
+        \end{itemize}
+\end{enumerate}
+\subsection{OpenCV Configuration}
+OpenCV must be cross-compiled for ARM with NEON and VFPV3 hardware acceleration enabled. For completeness sake, we also install the opencv\_contrib setup to enable SURF and SIFT algorithms. Some tutorials on how to do this are: 
+\begin{itemize}
+    \item \url{http://vuanhtung.blogspot.com/2014/04/and-updated-guide-to-get-hardware.html}
+    \item \url{http://docs.opencv.org/2.4/doc/tutorials/introduction/crosscompilation/arm_crosscompile_with_cmake.html}
+    \item \url{http://blog.lemoneerlabs.com/3rdParty/Darling_BBB_30fps_DRAFT.html}
+    \item \url{https://github.com/itseez/opencv_contrib}
+\end{itemize}
+I couldn't get python support through cross compiling, but when I compiled on the BBB, the python support worked. The micron USB contains the build files. Mount it at /media/usb/ to install. 
+\begin{itemize}
+    \item navigate to /media/usb/opencv/opencv-3.1.0/build
+    \item sudo make install
+\end{itemize}
+\subsection{Enabling ports}
+The BBB utilizes device trees to enable peripheral and show the address to the peripheral. A great resource with sample overlays is located at \url{https://github.com/beagleboard/bb.org-overlays}. 
+
+Source files *.dts are compiled to *.dtbo binaries using dtc. \url{https://learn.adafruit.com/introduction-to-the-beaglebone-black-device-tree/compiling-an-overlay}. The source files define the port muxing and such. The ports used in this project are shown in Table~\ref{tab:periph}. 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lllcl}
+        \$Pins & Header & Pin & Name & Mode \\ \hline
+        28 & 9 & 11 & UART4-RX & 6\\ 
+        29 & 9 & 13 & UART4-TX & 6 \\
+        18 & 9 & 14 & PWM1A & 6 \\
+        19 & 9 & 16 & PWM1B & 6 \\
+        87 & 9 & 17 & I2C1-SCL & 2 \\
+        86 & 9 & 18 & I2C1-SDA & 2 \\
+        85 & 9 & 21 & UART2-TX & 1 \\
+        84 & 9 & 22 & UART2-RX & 1 \\
+        96 & 9 & 26 & UART1-RX & 0 \\
+        97 & 9 & 24 & UART1-TX & 0 \\
+        48 & 8 & 37 & UART5-TX & 4 \\
+        49 & 8 & 38 & UART5-RX & 4 
+    \end{tabular}
+    \caption{The configuration of the peripherals we're using}
+    \label{tab:periph}
+\end{table}
+
+The *.dtbo files are stored in /lib/firmware/ which then can be called by writing the file to /sys/devices/platform/bone\_capemgr/slots. The initialization file to be used is shown in Table~\ref{tab:portInit}.  
+\begin{table}
+    \caption{The method for initializing the ports that will be used.}
+    \label{tab:portInit}
+\begin{lstlisting}
+export SLOTS=/sys/devices/platform/bone_capemgr/slots
+echo BB-PWM1 > $SLOTS
+echo BB-UART1 > $SLOTS
+echo BB-UART2 > $SLOTS
+echo BB-UART4 > $SLOTS
+#echo BB-I2C1 > $SLOTS  #I haven't tested if this I/O actually works, but it might.
+export PERIOD=20000000  #This period is nanoseconds, and the motors need a period of 20 ms
+
+sleep 1 # to allow the device tree time to set in place. 
+
+export PWM=/sys/class/pwm/pwmchip0
+
+echo 0 > $PWM/export
+echo 1 > $PWM/export
+echo $PERIOD > $PWM/pwm0/period
+echo 1 > $PWM/pwm0/enable
+
+echo $PERIOD > $PWM/pwm1/period
+echo 1 > $PWM/pwm1/enable
+chown -R sats:sats /sys/class/pwm/pwmchip0/pwm*
+
+# access pwm0 and pwm1 by file /sys/class/pwm/pwmchip0/pwm0/duty_cycle,  /sys/class/pwm/pwmchip0/pwm1/duty_cycle
+# UART is accesible in /dev/ttyO*, where the O is not a zero, and * is the UART port.
+# Tiva C is wired to UART4 on Beaglebone, communitcating through UART1 on Tiva C. 
+\end{lstlisting}
+\end{table}
+
+
+\subsection{ROS Workspace Configuration}
+\begin{itemize}
+    \item Create workspace directory, ~/catkin\_ws
+    \item Create source directory, ~/catkin\_ws/src
+    \item Navigate to src, initialize workspace: catkin\_init\_workspace
+    \item Place the following packages in the ~/catkin\_ws/src directory:
+        \begin{itemize}
+            \item sats\_ros\_car: svn co \url{svn+ssh://user@macbeth.think.usu.edu/svn/aet/code/sats_car_ros}
+            \item pixy\_ros: git clone \url{https://github.com/jeskesen/pixy_ros}. The headers need to be moved from the devel directory or included from there. 
+        \end{itemize}
+    \item run catkin\_make in ~/catkin\_ws/ 
+    \item If desired, add ~/catkin\_ws/devel/setup.bash to the .bash\_rc file
+\end{itemize}
+\subsection{Network Configuration}
+\subsubsection{Hosts}
+Change the /etc/hostname file to desired name, bbb0 to bbb9. 
+
+Add the following to /etc/hosts: 
+\begin{table}[H]
+    \label{etc:hosts}
+    \caption{Contents of /etc/hosts file to be used to enable networking}
+\begin{lstlisting}
+127.0.0.1 localhost
+127.0.1.1 bbb1.localdomain
+
+192.168.1.100 bbb0
+192.168.1.101 bbb1
+192.168.1.102 bbb2
+192.168.1.103 bbb3
+192.168.1.104 bbb4
+192.168.1.105 bbb5
+192.168.1.106 bbb6
+192.168.1.107 bbb7
+192.168.1.108 bbb8
+192.168.1.109 bbb9
+192.168.1.200 sats-desktop
+\end{lstlisting}
+\end{table}
+
+\subsubsection{Enable wifi}
+Enable wlan0, connect to DroneNet, set ip address to the corresponding address from Table~\ref{etc:hosts}. Example in Table~\ref{net:enable}. 
+\begin{table}
+    \caption{The commands to enable wifi on the BBB. }
+    \label{net:enable}
+\begin{lstlisting}
+ifconfig wlan0 up
+iwconfig essid ``DroneNet''
+ifconfig wlan0 inet 192.168.1.2 netmask 255.255.255.0
+\end{lstlisting}
+\end{table}
+
+
+\end{document}

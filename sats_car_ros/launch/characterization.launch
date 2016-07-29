@@ -1,0 +1,8 @@
+<launch>
+    <arg name="car" />
+    <machine name="$(arg car)" address="$(arg car)" env-loader="/home/sats/catkin_ws/devel/env.sh" user="sats"/>
+    <node pkg="rqt_console" name="rqt_console" type="rqt_console"/>
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="sensor_hub" type="sensor_hub.py"/> 
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="low_level" type="low_level.py"/> 
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="char_low_level" output="screen" type="char_low_level.py"/> 
+</launch>

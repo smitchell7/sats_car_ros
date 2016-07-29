@@ -1,0 +1,15 @@
+aL: -2.74081632653
+aR: -2.74081632653
+bL: 0.801873682274
+bR: 0.807646304422
+deadbandL: 0.1475
+deadbandR: 0.1475
+gps_mode: False 
+
+performance_car: 0.8602
+pixy_ofs:  0.0000
+pixy_gain: 0.5000
+
+#pixy_dist_a: 75.52
+#pixy_dist_b: 1.424
+#pixy_dist_c: 6.154

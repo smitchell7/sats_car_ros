@@ -1,0 +1,7 @@
+<launch>
+    <rosparam command="load" ns="params" file="$(find sats_car_ros)/yaml/params.yaml" />
+    <!-- <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"> </include> -->
+    <include file="$(find sats_car_ros)/launch/init_car.launch"> <arg name="car" value="bb2" /> </include>
+    <!-- <node pkg="rqt_gui" name="rqt_gui" type="rqt_gui"/> -->
+</launch>
+

@@ -1,0 +1,13 @@
+<launch>
+    <arg name="car" />
+    <machine name="$(arg car)" address="$(arg car)" env-loader="/home/sats/catkin_ws/devel/env.sh" user="sats"/>
+
+    <rosparam command="load" ns="$(arg car)/motor_gains" file="$(find sats_car_ros)/yaml/$(arg car)_motor.yaml" /> 
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="sensor_hub" type="sensor_hub.py" launch-prefix="nice -n 19"/> 
+    <node pkg="sats_car_ros" machine="$(arg car)" ns="$(arg car)" name="controller" type="controller.py" /> 
+   <!-- <node pkg="usb_cam"      machine="$(arg car)" ns="$(arg car)" name="usb_cam_node" output="screen" type="usb_cam_node"/> -->
+    <node pkg="pixy_node"    machine="$(arg car)" ns="$(arg car)" name="pixy_node_2"    output="screen" type="pixy_node_2"/>
+
+    
+ 
+</launch>

@@ -1,0 +1,582 @@
+/usr/lib/python2.7/dist-packages/matplotlib/backends/backend_qt5agg.py:210: MatplotlibDeprecationWarning: This class has been deprecated in 1.4 as it has no additional functionality over `NavigationToolbar2QT`.  Please change your code to use `NavigationToolbar2QT` instead
+  mplDeprecation)
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 89, in _event
+    new_parent = self._get_new_parent(widget)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/qt_gui/dock_widget.py", line 138, in _get_new_parent
+    widget = widget.parent()
+TypeError: 'Canvas' object is not callable
+[36mPlotWidget.add_topic(): topic already subscribed: /bb2/Block_info/theta[0m
+[36mPlot.dragEnterEvent(): rejecting: "topic /bb2/Block_info/all_thetas is variable-size numeric array"[0m
+[36mPlot.dragEnterEvent(): rejecting: "topic /bb2/Block_info/all_thetas is variable-size numeric array"[0m
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.timeout: timed out
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rqt_topic/topic_widget.py", line 118, in refresh_topics
+    topic_list = rospy.get_published_topics()
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/client.py", line 376, in get_published_topics
+    code, msg, val = get_master().getPublishedTopics(namespace)
+  File "/opt/ros/jade/lib/python2.7/dist-packages/rospy/msproxy.py", line 106, in wrappedF
+    return f(*args, **kwds)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1591, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1301, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1448, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1044, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 888, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 850, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 831, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 101] Network is unreachable
+[WARN] [WallTime: 1462305196.248178] unable to communicate with ROS Master, registrations are now out of sync

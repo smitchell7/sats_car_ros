@@ -1,0 +1,31 @@
+kp: 1.0
+kd: 2.0
+h : 0.5
+nom_dist: 0.5
+kpATK:  3.0
+kdATK: -1.0
+hATK :  0.5
+
+L: 0.31  # vehicle width
+
+controller_rate:  50.
+sensor_rate:      70. 
+high_level_rate:  5
+
+ll_kp: 1.35 
+ll_ki: 6.25
+ll_kd: 0.0008
+pwm_sat: 0.5 # pwm saturation limit. set to 0.95 during performance mode
+
+# kalman filer gains
+Q11: 0.0
+Q22: 200.0
+Q33: 0.0
+Q44: 5000.0
+R11: 0.0001
+R22: 1
+
+Plim_r: 100
+Plim_th: 2000
+
+lookahead: -19

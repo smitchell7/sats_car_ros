@@ -1,0 +1,12 @@
+<launch>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb1" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb2" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb3" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb4" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb5" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb6" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb7" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb9" /> </include>
+    <include file="$(find sats_car_ros)/launch/compile.launch"> <arg name="car" value="bb10" /> </include>
+</launch>
+
